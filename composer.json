@@ -1,0 +1,23 @@
+{
+  "name": "waltz/score",
+  "description": "Waltz configurating framework for Waltz framework",
+  "keywords": ["Waltz", "framework", "UnitTest", "TDD"],
+  "homepage": "https://github.com/stellaqua/Waltz.Score",
+  "version": "0.1.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tomoki Kobayashi",
+      "email": "tom@stellaqua.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "waltz/stagehand": "0.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Waltz\\Score": "src/"
+    }
+  }
+}
