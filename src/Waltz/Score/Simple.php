@@ -19,24 +19,29 @@ use Waltz\Stagehand\FileUtility;
  */
 class Simple implements ScoreInterface
 {
-    private $_targetFileList;
+    /**
+     * Test file paths
+     * 
+     * @var array
+     */
+    private $_testFilePaths;
 
     /**
-     * __construct 
-     * 
-     * @param string $targetPath
+     * Constructor
+     *
+     * @param string $testFileTargetPath
      */
-    public function __construct ( $targetPath ) {
-        $targetFilePathList = FileUtility::listFilePath($targetPath);
-        $this->_targetFilePathList = $targetFilePathList;
+    public function __construct ( $testFileTargetPath ) {
+        $testFilePaths = FileUtility::listFilePaths($testFileTargetPath);
+        $this->_testFilePaths = $testFilePaths;
     }
 
     /**
-     * getTargetFilePathList 
+     * getTestFilePaths
      * 
-     * @return array Target file path list
+     * @return array Test file paths
      */
-    public function getTargetFilePathList ( ) {
-        return $this->_targetFilePathList;
+    public function getTestFilePaths ( ) {
+        return $this->_testFilePaths;
     }
 }
