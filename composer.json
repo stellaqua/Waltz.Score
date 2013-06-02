@@ -18,6 +18,11 @@
   "require-dev": {
     "waltz/stagehand": "dev-develop"
   },
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "0.1.x-dev"
+    }
+  },
   "autoload": {
     "psr-0": {
       "Waltz\\Score": "src/"
