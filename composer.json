@@ -16,7 +16,7 @@
     "waltz/stagehand": "0.*"
   },
   "require-dev": {
-    "waltz/stagehand": "dev-develop"
+    "waltz/stagehand": "0.1.x-dev"
   },
   "extra": {
     "branch-alias": {
