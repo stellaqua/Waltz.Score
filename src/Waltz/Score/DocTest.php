@@ -69,6 +69,9 @@ class DocTest implements ScoreInterface
      */
     public function getTestFilesPath (  )
     {
+        if ( empty($this->_testFilesPath) === true ) {
+            $this->_testFilesPath = sys_get_temp_dir();
+        }
         return $this->_testFilesPath;
     }
 }
