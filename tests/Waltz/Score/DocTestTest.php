@@ -42,4 +42,15 @@ class DocTestTest extends \PHPUnit_Framework_TestCase
         $score->setTestFilesPath($testFilesPath);
         $this->assertSame($testFilesPath, $score->getTestFilesPath());
     }
+
+    /**
+     * test_getTestFilesPath_Without_Setting_Test_Files_Path
+     */
+    public function test_getTestFilesPath_Without_Setting_Test_Files_Path (  )
+    {
+        $targetDir = __DIR__ . '/data/one_file';
+        $score = new DocTest($targetDir);
+        $expected = sys_get_temp_dir();
+        $this->assertSame($expected, $score->getTestFilesPath());
+    }
 }
